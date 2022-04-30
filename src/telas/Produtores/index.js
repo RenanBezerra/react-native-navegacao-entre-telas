@@ -26,7 +26,7 @@ const navigation = useNavigation();
       ({ item }) => <Produtor 
       {...item} 
       aoPressionar={() => {
-        navigation.navigate('Produtor');
+        navigation.navigate('Produtor', item );
       }} />
     }
     keyExtractor={({ nome }) => nome}
