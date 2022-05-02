@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRoute } from '@react-navigation/native';
-import { FlatList, StyleSheet, View,Image, Textr  } from 'react-native';
+import { FlatList, StyleSheet, View,Image, Text  } from 'react-native';
 
 import Cesta from './componentes/Cesta';
 import Topo from '../../componentes/Topo'
@@ -18,7 +18,7 @@ export default function Produtor(){
             <Topo titulo={tituloProdutor} imagem={topo} altura={150} />
             <View style={estilos.conteudo}>
                 <Image source={imagem} style={estilos.produtorImage}/>
-                <Text style={estilos.produtor}>{nome}</Text>
+                <Text style={estilos.produtor} >{nome}</Text>
 
             </View>
 

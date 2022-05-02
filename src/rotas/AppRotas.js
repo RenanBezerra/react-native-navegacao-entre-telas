@@ -10,7 +10,7 @@ const Tab = createBottomTabNavigator();
 
 export default function AppRota(){
     return <NavigationContainer>
-    <Tab.Navigator>
+    <Tab.Navigator screenOptions={{ headerShown: false}}>
       <Tab.Screen name='Home' component={ProdutorRotas}/>
       <Tab.Screen name='MelhoresProdutores' component={MelhoresProdutoresRotas}/>
     </Tab.Navigator>
