@@ -21,13 +21,18 @@ export default function AppRota(){
         if(route.name === 'MelhoresProdutores'){
           Icon = Coracao;
         }
-        return <Icon color={color}/>
+        return <Icon color={color} width={20} height={20}/>
       },
       tabBarActiveTintColor:'#2A9F85',
-      tabBarInactiveTintColor: '#C7C7C7'  
+      tabBarInactiveTintColor: '#C7C7C7',
+      tabBarLabelStyle: {
+        fontSize: 15,
+      }  
       })}>
       <Tab.Screen name='Home' component={ProdutorRotas}/>
       <Tab.Screen name='MelhoresProdutores' component={MelhoresProdutoresRotas}/>
     </Tab.Navigator>
     </NavigationContainer>
+
+    
 }
